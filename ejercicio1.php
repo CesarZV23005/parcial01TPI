@@ -6,6 +6,25 @@ $personajes = [
     ["personaje" =>"burro","categoria"=> "principal"],
     ["personaje" =>"galleta","categoria"=> "amigo"],
 ];
+$tipo = $_POST["categoria"];
+if ($tipo == "todos") {
+    foreach ($personajes as $iPersonaje) {
+        echo $iPersonaje["personaje"];
+        echo $iPersonaje["categoria"];
+    }
+}
+elseif($tipo == "principal"){
+    foreach ($personajes as $iPersonaje) {
+        echo $iPersonaje["personaje"];
+        echo $iPersonaje["categoria"];
+    }
+}
+else{
+    foreach ($personajes as $iPersonaje) {
+        echo $iPersonaje["personaje"];
+        echo $iPersonaje["categoria"];
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,16 +38,11 @@ $personajes = [
     <h3>PERSONAJES DE SHERK</h3>
     <label>filtrar</label>
     <select name="categoria">
-        <option value="todos">todos</option>
+        <option value="todos" <?php $iPersonajes["todos"]?>>todos</option>
         <option value="principal">principal</option>
         <option value="villanos">villanos</option>
         <option value="amigo">amigos</option>
     </select>
-    <?php foreach ($personajes as $iPersonajes):?>
-    <?php
-        echo $iPersonajes["personaje"];
-        echo $iPersonajes["categoria"];
-    ?>
-    <?php endforeach;?>
+    <?php echo $tipo;?>
 </body>
 </html>
