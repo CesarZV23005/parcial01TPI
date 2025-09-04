@@ -13,6 +13,19 @@ $compras = [
     <title>Document</title>
 </head>
 <body>
-    
+    <table>
+        <tr>
+            <th>producto</th>
+            <th>precio</th>
+            <th>cantidad</th>
+            <th>subtotal</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 </body>
 </html>
