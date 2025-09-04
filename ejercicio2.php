@@ -11,6 +11,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $tipo = $_POST["tipo"];
     if ($tipo == "farenheit") {
         $resultado = $a * (9/5) + 32;
+        $mensaje = "EL resultado de convertir los grados a farenheit es de ". number_format($resultado,2);
+    }
+    else{
+        $resultado = ($b-32) * 5/9;
+        $mensaje = "El resultado de convertir los grados a celcius es de ". number_format($resultado,2);    
     }
 }
 ?>
