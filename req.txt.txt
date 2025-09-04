@@ -1,0 +1,2 @@
+docker build -t zv23005-apache-php  .
+docker run -d --name zv23005-servidor-php -p 8080:80 -v .:/var/www/html zv23005-apache-php
