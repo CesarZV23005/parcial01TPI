@@ -4,7 +4,7 @@ $personajes = [
     ["personaje" =>"senora","categoria"=> "villanos"],
     ["personaje" =>"shrek","categoria"=> "principal"],
     ["personaje" =>"burro","categoria"=> "principal"],
-    
+    ["personaje" =>"galleta","categoria"=> "amigo"],
 ];
 ?>
 <!DOCTYPE html>
@@ -15,6 +15,13 @@ $personajes = [
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>MENU</h1>
+    <h3>PERSONAJES DE SHERK</h3>
+    <label>filtrar</label>
+    <select name="categoria">
+        <option value="principal">principal</option>
+        <option value="villanos">villanos</option>
+        <option value="amigo">amigos</option>
+    </select>
 </body>
 </html>
