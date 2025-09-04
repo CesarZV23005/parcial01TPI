@@ -1,10 +1,17 @@
 <?php
+$mensaje = "";
+$resultado = 0;
 #farenheit a c
 # F = C * 9/5 + 32
 #celcius  a F
 # C = (F-32) 5/9
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $a = 
+    $a = floatval($_POST["temp"]);
+    $b = floatval($_POST["temp"]);
+    $tipo = $_POST["tipo"];
+    if ($tipo == "farenheit") {
+        $resultado = $a * (9/5) + 32;
+    }
 }
 ?>
 <!DOCTYPE html>
