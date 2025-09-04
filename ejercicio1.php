@@ -19,9 +19,16 @@ $personajes = [
     <h3>PERSONAJES DE SHERK</h3>
     <label>filtrar</label>
     <select name="categoria">
+        <option value="todos">todos</option>
         <option value="principal">principal</option>
         <option value="villanos">villanos</option>
         <option value="amigo">amigos</option>
     </select>
+    <?php foreach ($personajes as $iPersonajes):?>
+    <?php
+        echo $iPersonajes["personaje"];
+        echo $iPersonajes["categoria"];
+    ?>
+    <?php endforeach;?>
 </body>
 </html>
