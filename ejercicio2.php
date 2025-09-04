@@ -25,6 +25,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        label{
+            text-align: center;
+            color: dimgrey;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <h1>CONVERSOR DE TEMPERATURA</h1>
@@ -36,5 +43,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <option value="farenheit">FARENHEIT</option>
         <option value="celcius">CELCIUS</option>
     </select>
+    <?php  if($mensaje):?><?= $mensaje ?><?php endif;?>
 </body>
 </html>
